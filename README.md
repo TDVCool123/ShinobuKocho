@@ -7,11 +7,6 @@
 
 # Handler Bot de Discord | V14 
 
-El handler que necesitas para tu bot de Discord!
-> 👤 *Creado por **`dewstouh`***
-
-> <img src="https://cdn.discordapp.com/icons/879397504075063297/a_36490f721aa5fd41f84422ba9942a855.png" width="16" style="border-radius: 50%;"></img> [El Mundo de Niby](https://discord.com/invite/MBPsvcphGf)
-
 # 📋 Tabla de Contenidos
 
 - [Handler Bot de Discord | V14](#handler-bot-de-discord--v14)
@@ -20,7 +15,7 @@ El handler que necesitas para tu bot de Discord!
     - [☑️ Requisitos](#️-requisitos)
     - [📋 Instalación](#-instalación)
     - [⚙️ Configuración](#️-configuración)
-    - [🔨 Creación de Comandos](#-creación-de-comandos)
+    - [Creación de Comandos](#-creación-de-comandos)
       - [💬 Comandos de Prefijo](#-comandos-de-prefijo)
       - [(/) Comandos Slash](#-comandos-slash)
   - [💪 Características](#-características)
@@ -31,9 +26,6 @@ El handler que necesitas para tu bot de Discord!
 ### ☑️ Requisitos
 - Crear un bot en el [Portal de Developers de Discord](https://discord.com/developers/applications) y activarle los intentos de: Contenido de Mensaje **(obligatorio)**, Miembros de Servidores y Presencia **(opcionales)**.
 - Tener [NodeJS](https://nodejs.org) instalado en el equipo.
-⚠️ Se recomienda instalar la versión LTS `16.x.x` para evitar posibles errores. ⚠️
-- Un [cluster de MongoDB](https://www.mongodb.com/es/cloud/atlas/) para conectar la base de datos.
-- Es recomendable hostearlo en un VPS o una Raspberry PI para dejar tu bot 24/7 encendido.
 
 ### 📋 Instalación
 ```git
@@ -42,13 +34,12 @@ npm install
 ```
 
 ### ⚙️ Configuración
-Encontrarás un archivo llamado `example.env`, renómbralo a `.env` e introduce los datos que se solicitan para el funcionamiento del bot.
+Crear un archivo `.env` e introduce los datos que se solicitan para el funcionamiento del bot.
 
-*⚠️ Nunca compartas el contenido de tu `.env` con nadie*
+*⚠️ NUNCA compartas el contenido de tu `.env` con nadie*
 
 ```
 BOT_TOKEN = "El Token de tu Bot"
-MONGO_URL = "La url de tu Cluster de MongoDB"
 
 PREFIX = "Prefijo del Bot"
 STATUS = "Texto de Estado del Bot"
@@ -92,7 +83,7 @@ Para ejecutar el comando que hayamos creado, es tan sencillo como ejecutar en nu
 
 *⚠️ Si creas dos comandos con el mismo nombre, el bot solo ejecutará uno de ellos. ⚠️*
 #### (/) Comandos Slash
-En el contenido de `/src/slashCommands`, podrás encontrar las categorías de los comandos, para crear una categoría, es tan sencillo como crear una carpeta dentro de esta ruta, por ejemplo:
+En el contenido de `/src/slashCommands`, podrás encontrar las categorías de los comandos:
 
 - `/src/slashCommands/Prueba`
 
@@ -128,18 +119,6 @@ Para ejecutar el comando que hayamos creado, es tan sencillo como ejecutar en nu
 
 ## 💪 Características
 
-- ✅ Escalable
 - ✅ Organizado
-- ✅ Base de Datos MongoDB
 - ✅ Comandos Slash y Comandos de Prefijo
 - ✅ Recarga el bot sin tener que reiniciar, evitando posibles spams a la API de Discord
-
-## 💛 Contribuciones
-Gracias por usar este código! Si quieres apoyarnos puedes hacerlo realizando una [donación a través de PayPal](https://paypal.me/mfdewstouh).
-
-Todas las donaciones serán utilizadas para mejorar el servicio, los bots, la calidad de los videos y su contenido. ¡Gracias!
-
-## 🔰 Soporte
-Si necesitas ayuda, puedes acudir a nuestro <img src="https://cdn.discordapp.com/icons/879397504075063297/a_36490f721aa5fd41f84422ba9942a855.png" width="16" style="border-radius: 50%;"></img> [Servidor de Soporte](https://discord.gg/MBPsvcphGf) y podrás encontrar canales de ayuda en la sección de `🖥️ Programación`.
-
-***Testeado y funcionando correctamente en la versión NodeJS `16.11.0` y npm `8.0.0`***
